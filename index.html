@@ -17,16 +17,17 @@
     <script src="js/utils/facebook.js"></script>
     <script src="js/index.js"></script>
     <script type="text/javascript">
-    (funtion(thisdocument,scriptelemnt,id){
-      var js, fjs = thisdocument.getElementsByTagName(scriptelemnt)[0];
+    (function(thisdocument,scriptelement,id){
+      var js, fjs = thisdocument.getElementsByTagName(scriptelement)[0];
       if(thisdocument.getElementById(id)) return;
 
-      js = thisdocument.createElement(scriptelemnt); js.id = id;
-      js.src = "//connect.facebok.net/en_US/sdk.js";
-      fjs.parentNode.inserBefore(js,fjs);
+      js = thisdocument.createElement(scriptelement);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js,fjs);
 
-         ;
-    })(document,'script','facebook-jssdk'));
+
+    }(document,'script','facebook-jssdk'));
 
     </script>
   </body>
