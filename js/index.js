@@ -18,5 +18,5 @@ const state = {
  $( _ => {
    const root = $('#root');
    render (root);
-   state.doREnder = render.bind(null,root);
+   state.doRender = render.bind(null,root);
  });
